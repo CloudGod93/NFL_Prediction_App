@@ -1,0 +1,7 @@
+nfl_data_py
+pandas
+xgboost 
+matplotlib
+scikit-learn
+PyQt6 
+joblib
