@@ -41,8 +41,10 @@ def get_team_stats(year):
             points_for=('fantasy_points_ppr', 'sum'),
             pass_yds=('passing_yards', 'sum'),
             rush_yds=('rushing_yards', 'sum'),
-            turnovers=('interceptions', 'sum') + weekly.groupby('recent_team')['rushing_fumbles_lost'].sum()
+            interceptions=('interceptions', 'sum'),
+            rushing_fumbles_lost=('rushing_fumbles_lost', 'sum')
         ).reset_index()
+        season_stats['turnovers'] = season_stats['interceptions'] + season_stats['rushing_fumbles_lost']
         season_stats['games_played'] = weekly.groupby('recent_team')['week'].nunique().values
         
         # Merge stats
