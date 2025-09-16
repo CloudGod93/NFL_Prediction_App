@@ -144,8 +144,8 @@ class PredictionResultWidget(QWidget):
         confidence_bar = QWidget(); confidence_bar.setStyleSheet(f"background-color: {bar_color}; border-radius: 4px;")
         bar_layout.addWidget(confidence_bar, int(confidence * 100)); bar_layout.addStretch(100 - int(confidence * 100))
         
-        # Placeholder for Vegas Spread
-        spread_label = QLabel("Spread: -7.5"); spread_label.setStyleSheet("color: #aaa; font-style: italic;")
+        # Spread not available (placeholder)
+        spread_label = QLabel("Spread: N/A (test data)"); spread_label.setStyleSheet("color: #aaa; font-style: italic;")
 
         bottom_layout.addWidget(confidence_label); bottom_layout.addWidget(bar_container, 1)
         bottom_layout.addSpacerItem(QSpacerItem(20, 20)); bottom_layout.addWidget(spread_label)
