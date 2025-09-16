@@ -96,3 +96,8 @@ cython_debug/
 .DS_Store
 Thumbs.db
 src/__pycache__/*
+
+#########################
+# Model files
+#########################
+nfl_model.joblib
