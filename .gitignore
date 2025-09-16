@@ -1,0 +1,98 @@
+#########################
+# Python
+#########################
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+#########################
+# Packaging / Build
+#########################
+build/
+dist/
+wheelhouse/
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+#########################
+# Unit test / Coverage
+#########################
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.pytest_cache/
+
+#########################
+# Type checkers
+#########################
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+#########################
+# Jupyter / IPython
+#########################
+.ipynb_checkpoints
+profile_default/
+
+#########################
+# Virtual environments
+#########################
+.venv/
+venv/
+ENV/
+env/
+.env/
+
+#########################
+# Environments / Secrets
+#########################
+.env
+.env.*
+.python-version
+
+#########################
+# Frameworks / Tools
+#########################
+.scrapy/
+docs/_build/
+target/
+.ropeproject
+.spyproject
+site/
+cython_debug/
+
+#########################
+# IDEs / Editors
+#########################
+.vscode/
+.idea/
+.history/
+
+#########################
+# OS files / Logs
+#########################
+*.log
+.DS_Store
+Thumbs.db
+src/__pycache__/*
